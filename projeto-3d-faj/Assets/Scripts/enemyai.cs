@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class enemyai : MonoBehaviour
+public class EnemyAI : MonoBehaviour
 {
 
     public NavMeshAgent agent;
@@ -26,8 +26,8 @@ public class enemyai : MonoBehaviour
     //Estados
     public float sightRange, attackRange;
     public bool playerInsightRange, playerIntAttackRange;
-
     Animator myAnim;
+    public float speed = 0f;
     private void Awake()
     {
         myAnim = GetComponent<Animator>();
@@ -48,6 +48,8 @@ public class enemyai : MonoBehaviour
 
     private void Patrulhar()
     {
+        
+
         if (!walkPointSet) SearchwalkPoint();
 
         if (walkPointSet)
@@ -59,7 +61,14 @@ public class enemyai : MonoBehaviour
             walkPointSet = false;
             
         }
-        myAnim.SetFloat("speed", 1);
+        
+        if(speed < 1f)
+        {
+            speed += 0.1f;
+            myAnim.SetFloat("speed", speed);
+        }
+        
+        
             
 
     }
@@ -88,13 +97,15 @@ public class enemyai : MonoBehaviour
 
         if (!alreadyAttacked)
         {
-
+            speed = 0;
+            myAnim.SetFloat("speed", speed);
+            /*
             Rigidbody rb = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<Rigidbody>();
             rb.AddForce(transform.forward * 32f, ForceMode.Impulse);
             rb.AddForce(transform.up * 8f, ForceMode.Impulse);
 
             alreadyAttacked = true;
-            Invoke(nameof(ResetAttack), timeBetweenAttacks);
+            Invoke(nameof(ResetAttack), timeBetweenAttacks);*/
         }
     }
 
