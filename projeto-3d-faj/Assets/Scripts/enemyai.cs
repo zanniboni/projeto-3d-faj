@@ -27,9 +27,11 @@ public class enemyai : MonoBehaviour
     public float sightRange, attackRange;
     public bool playerInsightRange, playerIntAttackRange;
 
+    Animator myAnim;
     private void Awake()
     {
-        player = GameObject.Find("Enemy").transform;
+        myAnim = GetComponent<Animator>();
+        player = GameObject.Find("Player").transform;
         agent = GetComponent<NavMeshAgent>();
     }
 
@@ -53,8 +55,12 @@ public class enemyai : MonoBehaviour
 
         Vector3 distanteToWalkPoint = transform.position - walkPoint;
 
-        if (distanteToWalkPoint.magnitude < 1f)
+        if (distanteToWalkPoint.magnitude < 1f){
             walkPointSet = false;
+            
+        }
+        myAnim.SetFloat("speed", 1);
+            
 
     }
 
@@ -65,8 +71,10 @@ public class enemyai : MonoBehaviour
 
         walkPoint = new Vector3(transform.position.x + randomx, transform.position.y, transform.position.z + randomZ);
 
-        if (Physics.Raycast(walkPoint, -transform.up))
+        if (Physics.Raycast(walkPoint, -transform.up)){
             walkPointSet = true;
+        }
+            
     }
     private void PerseguirPlayer()
     {
