@@ -14,6 +14,8 @@ public class EnemyAI : MonoBehaviour
 
     public GameObject projectile;
 
+    public Transform arm;
+    
     // Patrulha
     public Vector3 walkPoint;
     bool walkPointSet;
@@ -27,12 +29,13 @@ public class EnemyAI : MonoBehaviour
     public float sightRange, attackRange;
     public bool playerInsightRange, playerIntAttackRange;
     Animator myAnim;
-    public float speed = 0f;
+    public float speed = 1f;
     private void Awake()
     {
         myAnim = GetComponent<Animator>();
         player = GameObject.Find("Player").transform;
         agent = GetComponent<NavMeshAgent>();
+        myAnim.SetFloat("speed", 1);
     }
 
     private void Update()
@@ -99,13 +102,12 @@ public class EnemyAI : MonoBehaviour
         {
             speed = 0;
             myAnim.SetFloat("speed", speed);
-            /*
-            Rigidbody rb = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<Rigidbody>();
+            Rigidbody rb = Instantiate(projectile, arm.position, Quaternion.identity).GetComponent<Rigidbody>();
             rb.AddForce(transform.forward * 32f, ForceMode.Impulse);
             rb.AddForce(transform.up * 8f, ForceMode.Impulse);
 
             alreadyAttacked = true;
-            Invoke(nameof(ResetAttack), timeBetweenAttacks);*/
+            Invoke(nameof(ResetAttack), timeBetweenAttacks);
         }
     }
 
