@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 1862893338108053887}
   - component: {fileID: 1862893338106923967}
   - component: {fileID: 8960690319864720355}
+  - component: {fileID: -4456499788139418068}
+  - component: {fileID: 6335540413086119146}
   m_Layer: 0
   m_Name: Ring
   m_TagString: Bullet
@@ -98,3 +100,33 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-4456499788139418068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1862893338108925311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ff3ea705a4a7244a59eef82e75c660, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyAfter: 5
+  destroyOnImpact: 0
+  minDestroyTime: 0
+  maxDestroyTime: 0
+  metalImpactPrefabs: []
+--- !u!65 &6335540413086119146
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1862893338108925311}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 30.167624, y: 30.167624, z: 1.5000005}
+  m_Center: {x: -0.0000014305114, y: -0.0000009536743, z: 0.7499996}

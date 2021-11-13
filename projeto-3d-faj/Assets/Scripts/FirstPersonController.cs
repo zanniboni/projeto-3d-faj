@@ -242,6 +242,13 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_MouseLook.LookRotation (transform, m_Camera.transform);
         }
 
+        void OnCollisionEnter(Collision col)
+        {
+            if (col.gameObject.tag == "Bullet")
+            {
+                Debug.Log("Tomou dano");
+            }
+        }
 
         private void OnControllerColliderHit(ControllerColliderHit hit)
         {
