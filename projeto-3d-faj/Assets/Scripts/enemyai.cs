@@ -15,7 +15,9 @@ public class EnemyAI : MonoBehaviour
     public GameObject projectile;
 
     public Transform arm;
-    
+    public static int count = 0;
+
+
     // Patrulha
     public Vector3 walkPoint;
     bool walkPointSet;
@@ -36,6 +38,7 @@ public class EnemyAI : MonoBehaviour
         player = GameObject.Find("Player").transform;
         agent = GetComponent<NavMeshAgent>();
         myAnim.SetFloat("speed", 1);
+        count++;
     }
 
     private void Update()
@@ -46,6 +49,7 @@ public class EnemyAI : MonoBehaviour
         if (!playerInsightRange && !playerIntAttackRange) Patrulhar();
         if (playerInsightRange && !playerIntAttackRange) PerseguirPlayer();
         if (playerIntAttackRange && playerInsightRange) AttackPlayer();
+        verificaMorte();
 
     }
 
@@ -116,4 +120,14 @@ public class EnemyAI : MonoBehaviour
         alreadyAttacked = false;
     }
 
+
+    void verificaMorte()
+    {
+
+        if (gameObject.GetComponent<PlayerHealth>().getHealth() < 0.1)
+        {
+            Destroy(gameObject, 0.8f);
+            FindObjectOfType<GameManager>().EndGame();
+        }
+    }
 }

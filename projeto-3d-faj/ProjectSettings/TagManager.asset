@@ -7,6 +7,10 @@ TagManager:
   - Enemy
   - Ground
   - Bullet
+  - Target
+  - Metal
+  - Fire
+  - ExplosiveBarrel
   layers:
   - Default
   - TransparentFX
@@ -19,7 +23,7 @@ TagManager:
   - WhatIsLadder
   - WhatIsEnemy
   - WhatIsPlayer
-  - 
+  - Bullet
   - 
   - 
   - 

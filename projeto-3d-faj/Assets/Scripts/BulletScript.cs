@@ -17,6 +17,8 @@ public class BulletScript : MonoBehaviour {
 	[Header("Impact Effect Prefabs")]
 	public Transform [] metalImpactPrefabs;
 
+	[SerializeField] private float attackDamage = 10f;
+
 	private void Start () 
 	{
 		//Start destroy timer
@@ -29,6 +31,7 @@ public class BulletScript : MonoBehaviour {
 
 		if(collision.transform.tag == "Player")
         {
+			collision.gameObject.GetComponent<PlayerHealth>().UpdateHealth(-attackDamage);
 			Debug.Log("Give damage");
         }
 		//If destroy on impact is false, start 

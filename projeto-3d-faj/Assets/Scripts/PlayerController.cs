@@ -13,14 +13,22 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        verificaMorte();
     }
+
     void OnCollisionEnter(Collision col)
     {
-        Debug.Log(col.gameObject.tag);
-        if (col.gameObject.tag == "Bullet")
+
+
+    }
+
+    void verificaMorte()
+    {
+
+        if (gameObject.GetComponent<PlayerHealth>().getHealth() < 0.1)
         {
-            Debug.Log("Tomou dano");
+            Destroy(gameObject, 0.8f);
+            FindObjectOfType<GameManager>().EndGame();
         }
     }
 }

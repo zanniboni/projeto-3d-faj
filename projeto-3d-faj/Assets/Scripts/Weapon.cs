@@ -26,7 +26,7 @@ public class Weapon : MonoBehaviour
 
     private bool reloadb = false;
     private int timetr;
-
+    [SerializeField] private float attackDamage = 50f;
     // Update is called once per frame
     void Update()
     {
@@ -101,6 +101,11 @@ public class Weapon : MonoBehaviour
         {
             Debug.Log("Mirando em:" + hit.transform.name);
             GameObject impact60 = Instantiate(impact, hit.point, Quaternion.LookRotation(hit.normal));
+            if(hit.transform.tag == "Enemy")
+            {
+                hit.transform.GetComponent<PlayerHealth>().UpdateHealth(-attackDamage);
+            }
+
         }
     }
 }
