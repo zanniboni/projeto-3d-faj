@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -252,24 +252,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a58345448bfe5e4d8f589591f0e3c0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  agent: {fileID: 2876990}
-  player: {fileID: 521359508}
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 64
-  whatIsPlayer:
-    serializedVersion: 2
-    m_Bits: 1024
-  projectile: {fileID: 1862893338108925311, guid: 9eaf8bf2fd6e40043894e4e34e6f6cd9, type: 3}
-  arm: {fileID: 1696653418}
-  walkPoint: {x: 0, y: 0, z: 0}
-  walkPointRange: 10
-  timeBetweenAttacks: 1
-  sightRange: 7
-  attackRange: 5
-  playerInsightRange: 0
-  playerIntAttackRange: 0
-  speed: 1
 --- !u!4 &2876995 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8294905823470063506, guid: 0bf4e35ee88728b4caedc8765f925cd8, type: 3}
@@ -1199,24 +1181,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a58345448bfe5e4d8f589591f0e3c0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  agent: {fileID: 44563977}
-  player: {fileID: 521359508}
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 64
-  whatIsPlayer:
-    serializedVersion: 2
-    m_Bits: 1024
-  projectile: {fileID: 1862893338108925311, guid: 9eaf8bf2fd6e40043894e4e34e6f6cd9, type: 3}
-  arm: {fileID: 503895548}
-  walkPoint: {x: 0, y: 0, z: 0}
-  walkPointRange: 10
-  timeBetweenAttacks: 1
-  sightRange: 7
-  attackRange: 5
-  playerInsightRange: 0
-  playerIntAttackRange: 0
-  speed: 1
 --- !u!4 &44563982 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8294905823470063506, guid: 0bf4e35ee88728b4caedc8765f925cd8, type: 3}
@@ -5307,24 +5271,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a58345448bfe5e4d8f589591f0e3c0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  agent: {fileID: 275294793}
-  player: {fileID: 521359508}
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 64
-  whatIsPlayer:
-    serializedVersion: 2
-    m_Bits: 1024
-  projectile: {fileID: 1862893338108925311, guid: 9eaf8bf2fd6e40043894e4e34e6f6cd9, type: 3}
-  arm: {fileID: 1923751313}
-  walkPoint: {x: 0, y: 0, z: 0}
-  walkPointRange: 10
-  timeBetweenAttacks: 1
-  sightRange: 7
-  attackRange: 5
-  playerInsightRange: 0
-  playerIntAttackRange: 0
-  speed: 1
 --- !u!4 &275294798 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8294905823470063506, guid: 0bf4e35ee88728b4caedc8765f925cd8, type: 3}
@@ -7861,24 +7807,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a58345448bfe5e4d8f589591f0e3c0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  agent: {fileID: 365429504}
-  player: {fileID: 521359508}
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 64
-  whatIsPlayer:
-    serializedVersion: 2
-    m_Bits: 1024
-  projectile: {fileID: 1862893338108925311, guid: 9eaf8bf2fd6e40043894e4e34e6f6cd9, type: 3}
-  arm: {fileID: 1853147565}
-  walkPoint: {x: 0, y: 0, z: 0}
-  walkPointRange: 10
-  timeBetweenAttacks: 1
-  sightRange: 7
-  attackRange: 5
-  playerInsightRange: 0
-  playerIntAttackRange: 0
-  speed: 1
 --- !u!195 &365429504
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -8871,24 +8799,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a58345448bfe5e4d8f589591f0e3c0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  agent: {fileID: 415619574}
-  player: {fileID: 521359508}
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 64
-  whatIsPlayer:
-    serializedVersion: 2
-    m_Bits: 1024
-  projectile: {fileID: 1862893338108925311, guid: 9eaf8bf2fd6e40043894e4e34e6f6cd9, type: 3}
-  arm: {fileID: 1273006471}
-  walkPoint: {x: 0, y: 0, z: 0}
-  walkPointRange: 10
-  timeBetweenAttacks: 1
-  sightRange: 7
-  attackRange: 5
-  playerInsightRange: 0
-  playerIntAttackRange: 0
-  speed: 1
 --- !u!4 &415619579 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8294905823470063506, guid: 0bf4e35ee88728b4caedc8765f925cd8, type: 3}
@@ -11111,11 +11021,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f6c4572e07a60b43b00e1c4f489a806, type: 3}
---- !u!4 &521359508 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 400002, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
-  m_PrefabInstance: {fileID: 1259414536}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &523048856 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9051238300485817969, guid: 2f6c4572e07a60b43b00e1c4f489a806, type: 3}
@@ -13926,24 +13831,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a58345448bfe5e4d8f589591f0e3c0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  agent: {fileID: 651219707}
-  player: {fileID: 521359508}
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 64
-  whatIsPlayer:
-    serializedVersion: 2
-    m_Bits: 1024
-  projectile: {fileID: 1862893338108925311, guid: 9eaf8bf2fd6e40043894e4e34e6f6cd9, type: 3}
-  arm: {fileID: 200351038}
-  walkPoint: {x: 0, y: 0, z: 0}
-  walkPointRange: 10
-  timeBetweenAttacks: 1
-  sightRange: 7
-  attackRange: 5
-  playerInsightRange: 0
-  playerIntAttackRange: 0
-  speed: 1
 --- !u!4 &651219712 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8294905823470063506, guid: 0bf4e35ee88728b4caedc8765f925cd8, type: 3}
@@ -21398,24 +21285,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a58345448bfe5e4d8f589591f0e3c0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  agent: {fileID: 1135020921}
-  player: {fileID: 521359508}
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 64
-  whatIsPlayer:
-    serializedVersion: 2
-    m_Bits: 1024
-  projectile: {fileID: 1862893338108925311, guid: 9eaf8bf2fd6e40043894e4e34e6f6cd9, type: 3}
-  arm: {fileID: 2076276159}
-  walkPoint: {x: 0, y: 0, z: 0}
-  walkPointRange: 10
-  timeBetweenAttacks: 1
-  sightRange: 7
-  attackRange: 5
-  playerInsightRange: 0
-  playerIntAttackRange: 0
-  speed: 1
 --- !u!4 &1135020926 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8294905823470063506, guid: 0bf4e35ee88728b4caedc8765f925cd8, type: 3}
@@ -22357,24 +22226,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a58345448bfe5e4d8f589591f0e3c0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  agent: {fileID: 1161927011}
-  player: {fileID: 521359508}
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 64
-  whatIsPlayer:
-    serializedVersion: 2
-    m_Bits: 1024
-  projectile: {fileID: 1862893338108925311, guid: 9eaf8bf2fd6e40043894e4e34e6f6cd9, type: 3}
-  arm: {fileID: 967688102}
-  walkPoint: {x: 0, y: 0, z: 0}
-  walkPointRange: 10
-  timeBetweenAttacks: 1
-  sightRange: 7
-  attackRange: 5
-  playerInsightRange: 0
-  playerIntAttackRange: 0
-  speed: 1
 --- !u!4 &1161927016 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8294905823470063506, guid: 0bf4e35ee88728b4caedc8765f925cd8, type: 3}
@@ -23286,24 +23137,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a58345448bfe5e4d8f589591f0e3c0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  agent: {fileID: 1216794209}
-  player: {fileID: 521359508}
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 64
-  whatIsPlayer:
-    serializedVersion: 2
-    m_Bits: 1024
-  projectile: {fileID: 1862893338108925311, guid: 9eaf8bf2fd6e40043894e4e34e6f6cd9, type: 3}
-  arm: {fileID: 1946535517}
-  walkPoint: {x: 0, y: 0, z: 0}
-  walkPointRange: 10
-  timeBetweenAttacks: 1
-  sightRange: 7
-  attackRange: 5
-  playerInsightRange: 0
-  playerIntAttackRange: 0
-  speed: 1
 --- !u!4 &1216794214 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8294905823470063506, guid: 0bf4e35ee88728b4caedc8765f925cd8, type: 3}
@@ -34037,24 +33870,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a58345448bfe5e4d8f589591f0e3c0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  agent: {fileID: 1632944301}
-  player: {fileID: 521359508}
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 64
-  whatIsPlayer:
-    serializedVersion: 2
-    m_Bits: 1024
-  projectile: {fileID: 1862893338108925311, guid: 9eaf8bf2fd6e40043894e4e34e6f6cd9, type: 3}
-  arm: {fileID: 1147549630}
-  walkPoint: {x: 0, y: 0, z: 0}
-  walkPointRange: 10
-  timeBetweenAttacks: 1
-  sightRange: 7
-  attackRange: 5
-  playerInsightRange: 0
-  playerIntAttackRange: 0
-  speed: 1
 --- !u!4 &1632944306 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8294905823470063506, guid: 0bf4e35ee88728b4caedc8765f925cd8, type: 3}
@@ -36110,24 +35925,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a58345448bfe5e4d8f589591f0e3c0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  agent: {fileID: 1726024040}
-  player: {fileID: 521359508}
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 64
-  whatIsPlayer:
-    serializedVersion: 2
-    m_Bits: 1024
-  projectile: {fileID: 1862893338108925311, guid: 9eaf8bf2fd6e40043894e4e34e6f6cd9, type: 3}
-  arm: {fileID: 1853252040}
-  walkPoint: {x: 0, y: 0, z: 0}
-  walkPointRange: 10
-  timeBetweenAttacks: 1
-  sightRange: 7
-  attackRange: 5
-  playerInsightRange: 0
-  playerIntAttackRange: 0
-  speed: 1
 --- !u!4 &1726024045 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8294905823470063506, guid: 0bf4e35ee88728b4caedc8765f925cd8, type: 3}
@@ -42374,24 +42171,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a58345448bfe5e4d8f589591f0e3c0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  agent: {fileID: 2003120199}
-  player: {fileID: 521359508}
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 64
-  whatIsPlayer:
-    serializedVersion: 2
-    m_Bits: 1024
-  projectile: {fileID: 1862893338108925311, guid: 9eaf8bf2fd6e40043894e4e34e6f6cd9, type: 3}
-  arm: {fileID: 1493874486}
-  walkPoint: {x: 0, y: 0, z: 0}
-  walkPointRange: 10
-  timeBetweenAttacks: 1
-  sightRange: 7
-  attackRange: 5
-  playerInsightRange: 0
-  playerIntAttackRange: 0
-  speed: 1
 --- !u!4 &2003120204 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8294905823470063506, guid: 0bf4e35ee88728b4caedc8765f925cd8, type: 3}
@@ -42690,24 +42469,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a58345448bfe5e4d8f589591f0e3c0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  agent: {fileID: 2016497456}
-  player: {fileID: 521359508}
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 64
-  whatIsPlayer:
-    serializedVersion: 2
-    m_Bits: 1024
-  projectile: {fileID: 1862893338108925311, guid: 9eaf8bf2fd6e40043894e4e34e6f6cd9, type: 3}
-  arm: {fileID: 651917440}
-  walkPoint: {x: 0, y: 0, z: 0}
-  walkPointRange: 10
-  timeBetweenAttacks: 1
-  sightRange: 7
-  attackRange: 5
-  playerInsightRange: 0
-  playerIntAttackRange: 0
-  speed: 1
 --- !u!4 &2016497461 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8294905823470063506, guid: 0bf4e35ee88728b4caedc8765f925cd8, type: 3}
@@ -44322,24 +44083,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a58345448bfe5e4d8f589591f0e3c0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  agent: {fileID: 2062166895}
-  player: {fileID: 521359508}
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 64
-  whatIsPlayer:
-    serializedVersion: 2
-    m_Bits: 1024
-  projectile: {fileID: 1862893338108925311, guid: 9eaf8bf2fd6e40043894e4e34e6f6cd9, type: 3}
-  arm: {fileID: 1263123187}
-  walkPoint: {x: 0, y: 0, z: 0}
-  walkPointRange: 10
-  timeBetweenAttacks: 1
-  sightRange: 7
-  attackRange: 5
-  playerInsightRange: 0
-  playerIntAttackRange: 0
-  speed: 1
 --- !u!4 &2062166900 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8294905823470063506, guid: 0bf4e35ee88728b4caedc8765f925cd8, type: 3}
@@ -46912,7 +46655,7 @@ PrefabInstance:
       objectReference: {fileID: 654685886}
     - target: {fileID: 1092864258, guid: 5f214da2f23b8854899bf5a11a335218, type: 3}
       propertyPath: Ammo
-      value: 90
+      value: 240
       objectReference: {fileID: 0}
     - target: {fileID: 1092864258, guid: 5f214da2f23b8854899bf5a11a335218, type: 3}
       propertyPath: ammoShow

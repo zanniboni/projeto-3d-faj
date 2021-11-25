@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 public class EnemyAI : MonoBehaviour
 {
@@ -15,7 +16,10 @@ public class EnemyAI : MonoBehaviour
     public GameObject projectile;
 
     public Transform arm;
+
     public static int count = 0;
+
+    static int morteIA = 0;
 
 
     // Patrulha
@@ -55,7 +59,7 @@ public class EnemyAI : MonoBehaviour
 
     private void Patrulhar()
     {
-        
+
 
         if (!walkPointSet) SearchwalkPoint();
 
@@ -64,19 +68,20 @@ public class EnemyAI : MonoBehaviour
 
         Vector3 distanteToWalkPoint = transform.position - walkPoint;
 
-        if (distanteToWalkPoint.magnitude < 1f){
+        if (distanteToWalkPoint.magnitude < 1f)
+        {
             walkPointSet = false;
-            
+
         }
-        
-        if(speed < 1f)
+
+        if (speed < 1f)
         {
             speed += 0.1f;
             myAnim.SetFloat("speed", speed);
         }
-        
-        
-            
+
+
+
 
     }
 
@@ -87,10 +92,11 @@ public class EnemyAI : MonoBehaviour
 
         walkPoint = new Vector3(transform.position.x + randomx, transform.position.y, transform.position.z + randomZ);
 
-        if (Physics.Raycast(walkPoint, -transform.up)){
+        if (Physics.Raycast(walkPoint, -transform.up))
+        {
             walkPointSet = true;
         }
-            
+
     }
     private void PerseguirPlayer()
     {
@@ -128,6 +134,15 @@ public class EnemyAI : MonoBehaviour
         {
             Destroy(gameObject, 0.8f);
             FindObjectOfType<GameManager>().EndGame();
+
+            
+
+            morteIA = morteIA + 1;
+
+            if (morteIA > 13)
+            {
+                SceneManager.LoadScene("YouWin");
+            }
         }
     }
 }

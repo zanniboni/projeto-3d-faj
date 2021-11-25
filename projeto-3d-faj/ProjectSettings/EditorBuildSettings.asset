@@ -6,9 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/IntroVideo.unity
+    guid: f2555311d3e84fc439524874fd6f091b
+  - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: 78b2ef013f1cd87478064dd6aa83a823
   - enabled: 1
     path: Assets/Scenes/GameFPSRespawn.unity
     guid: 42b3a23dd9073f94682dd7b05e8865ee
+  - enabled: 1
+    path: Assets/Scenes/Creditos.unity
+    guid: 1ade43d96b4b898408b7cb876cf6060a
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 18def1912d7451c49b53f3bbee8aaa32
+  - enabled: 1
+    path: Assets/Scenes/YouWin.unity
+    guid: 0935b57483d5b4f4884004232ac7b8e0
   m_configObjects: {}
